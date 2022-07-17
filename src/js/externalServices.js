@@ -23,7 +23,7 @@ class ExternalServices {
   }
 
   async checkout(orderObj) {
-    const serverURL = "http://157.201.228.93:2992/checkout";
+    const serverURL = "https://157.201.228.93:2992/checkout";
 
     const options = {
       method: "POST",
@@ -39,7 +39,7 @@ class ExternalServices {
   }
 
   async loginRequest(creds) {
-    const serverURL = "http://157.201.228.93:2992/login";
+    const serverURL = "https://157.201.228.93:2992/login";
 
     const options = {
       method: "POST",
@@ -55,7 +55,7 @@ class ExternalServices {
   }
 
   async fetchOrders(token) {
-    const serverURL = "http://157.201.228.93:2992/orders";
+    const serverURL = "https://157.201.228.93:2992/orders";
 
     const options = {
       method: "GET",
