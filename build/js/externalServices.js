@@ -16,7 +16,7 @@ var c = (a, e, t) => new Promise((o, n) => {
     h = r => r.done ? o(r.value) : Promise.resolve(r.value).then(s, d);
   h((t = t.apply(a, e)).next())
 });
-const u = "https://157.201.228.93:2992/";
+const u = "http://157.201.228.93:2992/";
 
 function i(a) {
   if (a.ok) return a.json();
@@ -40,7 +40,7 @@ class y {
   }
   checkout(e) {
     return c(this, null, function* () {
-      const t = "https://157.201.228.93:2992/checkout",
+      const t = "http://157.201.228.93:2992/checkout",
         o = {
           method: "POST",
           headers: {
@@ -54,7 +54,7 @@ class y {
   }
   loginRequest(e) {
     return c(this, null, function* () {
-      const t = "https://157.201.228.93:2992/login",
+      const t = "http://157.201.228.93:2992/login",
         o = {
           method: "POST",
           body: JSON.stringify(e),
@@ -68,7 +68,7 @@ class y {
   }
   fetchOrders(e) {
     return c(this, null, function* () {
-      const t = "https://157.201.228.93:2992/orders",
+      const t = "http://157.201.228.93:2992/orders",
         o = {
           method: "GET",
           headers: {
